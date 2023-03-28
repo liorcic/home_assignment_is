@@ -11,7 +11,7 @@ def get_random_word():
 
 def generate_random_buy() -> UserPurchaseInsert:
     username = get_random_word()
-    user_id = random.randint(1, 1000)
+    user_id = random.randint(1, 10)
     price = random.random() * random.randint(1, 100)
     product = get_random_word()
     purchase = UserPurchaseInsert(username=username,

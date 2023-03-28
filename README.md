@@ -28,18 +28,21 @@ You can use the application in two different ways. Experience it by the web appl
 **Web Application**
 
 1. Open a web browser and go to `http://localhost:3000`
-2. Enjoy a couple of basic features. (Table with all purchases, Search by user id, Trigger Random Buy request)
+2. Click on "Random Buy" to create the first purchase
+3. Please allow a 2-5 seconds since the first execution needs to connect to the MongoDB and the Kafka topic.
+4. Press "Reload Table"
+5. Play with the user interface :) 
 
 **Backend Swagger**
 
 1. Open a web browser and go to `http://localhost:6200/docs`
 2. Click on the different tabs and try them out.
 
-The user web service is using another api responsible of the crud opertions on mongodb.
+This client api is using the server api which is responsible for the crud opertions on mongodb.
 
 You can access the server api at the url `http://localhost:6201/docs`
 
-### API Endpoints
+### API Endpoints 
 
 - `POST /buy`: Trigger's a random buy request
 - `GET /buyList`: Get all purchases
