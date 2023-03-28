@@ -7,4 +7,4 @@ class UserPurchaseInsert(BaseModel):
     user_id: int = Field(...)
     price: float = Field(...)
     product: str = Field(...)
-    timestamp: datetime = datetime.now()
+    timestamp: datetime = Field(...)

@@ -12,7 +12,7 @@ services:
     ports:
       - "27017:27017"
     volumes:
-      - ./db_data:/data/db
+      - mongo-volume:/data/db
 
   zookeeper:
     image: confluentinc/cp-zookeeper:7.3.2
@@ -86,3 +86,7 @@ services:
     restart: unless-stopped
     environment:
       REACT_APP_API_URL: "http://localhost:6200"
+
+volumes:
+    mongo-volume:
+      external: false
