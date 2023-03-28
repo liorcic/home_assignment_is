@@ -23,7 +23,14 @@ This is a simple web application that allows users to purchase random items and 
 
 ### Usage
 
-Currently, the front end is not supported. However you can use the swagger documentation of the customer web server in order to interact with the different components.
+You can use the application in two different ways. Experience it by the web application or by the backend api's.
+
+**Web Application**
+
+1. Open a web browser and go to `http://localhost:3000`
+2. Enjoy a couple of basic features. (Table with all purchases, Search by user id, Trigger Random Buy request)
+
+**Backend Swagger**
 
 1. Open a web browser and go to `http://localhost:6200/docs`
 2. Click on the different tabs and try them out.
