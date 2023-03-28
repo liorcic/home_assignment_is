@@ -28,6 +28,10 @@ Currently, the front end is not supported. However you can use the swagger docum
 1. Open a web browser and go to `http://localhost:6200/docs`
 2. Click on the different tabs and try them out.
 
+The user web service is using another api responsible of the crud opertions on mongodb.
+
+You can access the server api at the url `http://localhost:6201/docs`
+
 ### API Endpoints
 
 - `POST /buy`: Trigger's a random buy request
