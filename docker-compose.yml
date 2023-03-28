@@ -72,4 +72,4 @@ services:
     environment:
       KAFKA_BROKERS: "[\"kafka:9092\"]"
       KAFKA_TOPIC: "purchases"
-      MANAGING_API_URL: "http://server_api:6201"
+      MANAGING_API_URL: "http://api_server_customer_management:6201"
