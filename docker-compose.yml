@@ -73,3 +73,16 @@ services:
       KAFKA_BROKERS: "[\"kafka:9092\"]"
       KAFKA_TOPIC: "purchases"
       MANAGING_API_URL: "http://api_server_customer_management:8000"
+  
+  react_server:
+    build: 
+      context: customer_app
+      dockerfile: Dockerfile
+    container_name: react_server
+    ports:
+      - "3000:3000"
+    depends_on:
+      - server_api
+    restart: unless-stopped
+    environment:
+      REACT_APP_API_URL: "http://localhost:6200"
