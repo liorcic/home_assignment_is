@@ -18,7 +18,8 @@ This is a simple web application that allows users to purchase random items and 
 1. Clone the repository: `git clone https://github.com/liorcic/home_assignment_is.git`
 2. Navigate to the project directory: `cd home_assignment_is`
 3. Create environmment variables: `export MONGO_USER=root MONGO_PASSWORD=password`
-4. Build and start the containers: `docker-compose up -d`
+4. Create a directory for persistent data called db_data: `mkdir db_data`
+5. Build and start the containers: `docker-compose up -d`
 
 ### Usage
 
