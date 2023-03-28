@@ -4,7 +4,7 @@ import axios from 'axios';
 
 function BuyButton() {
   const handleClick = () => {
-    axios.get(`${process.env.REACT_APP_API_URL}/buy`)
+    axios.post(`${process.env.REACT_APP_API_URL}/buy`)
       .then(res => {
         console.log(res.data);
       })
