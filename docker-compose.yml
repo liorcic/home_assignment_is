@@ -46,7 +46,7 @@ services:
       dockerfile: Dockerfile
     container_name: api_server_customer_management
     ports:
-      - "8000:8000"
+      - "6201:8000"
     depends_on:
       - kafka
       - mongo
@@ -64,7 +64,7 @@ services:
       dockerfile: Dockerfile
     container_name: customers_api
     ports:
-      - "8200:8000"
+      - "6200:8000"
     depends_on:
       - kafka
       - server_api
@@ -72,4 +72,4 @@ services:
     environment:
       KAFKA_BROKERS: "[\"kafka:9092\"]"
       KAFKA_TOPIC: "purchases"
-      MANAGING_API_URL: "http://server_api:8000"
+      MANAGING_API_URL: "http://server_api:6201"
